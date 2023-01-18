@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@giscus/vue": "^2.2.6",
-    "vitepress": "^1.0.0-alpha.36",
+    "vitepress": "^1.0.0-alpha.38",
     "vue": "^3.2.45"
   },
   "author": {
