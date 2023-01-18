@@ -74,7 +74,7 @@ export default {
                     text: '개발자 가이드',
                     items: [
                         { text: 'Database', link: '/developers/database' },
-                        { text: 'Hook' },
+                        { text: 'Hook', link: '/developers/hook' },
                         { text: 'cache' },
                         { text: '경로 및 URL' },
                         { text: '문자열' },
