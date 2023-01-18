@@ -18,5 +18,5 @@ features:
     link: /youngcart/index
   - icon: 💻
     title: 개발자 가이드
-    link: /devalopers/index
+    link: /developers/index
 ---
