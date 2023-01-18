@@ -8,11 +8,11 @@ export default {
         siteTitle: 'GNUBOARD 5',
         outline: [2, 3],
         sidebar: {
-            '/users/': [
+            '/gnuboard/': [
                 {
                     text: '설치',
                     items: [
-                        { text: '설치', link: '/install' },
+                        { text: '설치', link: '/gnuboard/install' },
                         { text: '테마 & 스킨' },
                         { text: '페이지 꾸미기' },
                     ]
@@ -93,7 +93,7 @@ export default {
             ]
         },
         nav: [
-            { text: '그누보드', link: '/users/index' },
+            { text: '그누보드', link: '/gnuboard/index' },
             { text: '영카트', link: '/youngcart/index' },
             { text: '개발자', link: '/developers/index' },
         ],
