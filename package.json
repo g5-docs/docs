@@ -1,0 +1,20 @@
+{
+  "private": "true",
+  "name": "gnuboard5-docs",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@giscus/vue": "^2.2.6",
+    "vitepress": "^1.0.0-alpha.36",
+    "vue": "^3.2.45"
+  },
+  "author": {
+    "name": "kkigomi",
+    "email": "kkigomi@duck.com",
+    "url": "https://github.com/kkigomi"
+  }
+}
