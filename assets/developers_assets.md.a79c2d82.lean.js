@@ -1,0 +1,1 @@
+import{_ as e,c as s,o as t,a}from"./app.d6921ff2.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developers/assets.md","lastUpdated":1674060445000}'),o={name:"developers/assets.md"},r=a("p",null,"TBD",-1),n=[r];function c(d,p,_,l,i,m){return t(),s("div",null,n)}const h=e(o,[["render",c]]);export{u as __pageData,h as default};
