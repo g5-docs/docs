@@ -7,6 +7,9 @@ hero:
   tagline: 사용자가 직접 만드는 그누보드 안내서
   actions:
     - theme: brand
-      text: 시작하기
+      text: 가이드 보기
       link: /gnuboard/index
+    - theme: alt
+      text: 문서화 참여하기
+      link: https://github.com/g5-docs/docs/discussions/1
 ---
