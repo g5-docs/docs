@@ -72,7 +72,7 @@ class MyHookListenerClass
 {
     private self $instance;
 
-    public function getInstance(): self
+    public static function getInstance(): self
     {
         if (!self::$instance) {
             self::$instance = new self();
