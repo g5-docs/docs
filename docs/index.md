@@ -1,4 +1,5 @@
 ---
+title: GNUBOARD 5
 layout: home
 hero:
   name: GNUBOARD 5
