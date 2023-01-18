@@ -13,8 +13,7 @@ export default {
                     text: '설치',
                     items: [
                         { text: '설치', link: '/gnuboard/install' },
-                        { text: '테마 & 스킨' },
-                        { text: '페이지 꾸미기' },
+                        { text: '테마 & 스킨', link: '/gnuboard/theme_skin' },
                     ]
                 },
                 {
@@ -75,19 +74,17 @@ export default {
                     items: [
                         { text: 'Database', link: '/developers/database' },
                         { text: 'Hook', link: '/developers/hook' },
-                        { text: 'cache' },
-                        { text: '경로 및 URL' },
-                        { text: '문자열' },
-                        { text: '쿠키 & 세션' },
-                        { text: '토큰 및 암호화' },
-                        { text: 'assets' },
-                        { text: 'cache' },
-                        { text: '디버깅' },
-                        { text: '테마 만들기' },
-                        { text: '스킨 만들기' },
-                        { text: 'extend' },
-                        { text: 'plugin' },
-                        { text: '보안' },
+                        { text: '경로 및 URL', link: '/developers/path_and_url' },
+                        { text: '문자열', link: '/developers/string' },
+                        { text: '쿠키 및 세션', link: '/developers/cookie_and_session' },
+                        { text: '토큰 및 암호화', link: '/developers/token_and_hash' },
+                        { text: 'assets', link: '/developers/assets' },
+                        { text: 'cache', link: '/developers/cache' },
+                        { text: '디버깅', link: '/developers/debug' },
+                        { text: '테마 만들기', link: '/developers/make_theme' },
+                        { text: '스킨 만들기', link: '/developers/make_skin' },
+                        { text: '기능 확장하기', link: '/developers/extend' },
+                        { text: '보안', link: '/developers/security' },
                     ]
                 }
             ]
