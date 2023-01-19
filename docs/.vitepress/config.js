@@ -81,10 +81,21 @@ export default {
                         { text: 'assets', link: '/developers/assets' },
                         { text: 'cache', link: '/developers/cache' },
                         { text: '디버깅', link: '/developers/debug' },
-                        { text: '테마 만들기', link: '/developers/make_theme' },
-                        { text: '스킨 만들기', link: '/developers/make_skin' },
                         { text: '기능 확장하기', link: '/developers/extend' },
                         { text: '보안', link: '/developers/security' },
+                    ]
+                },
+                {
+                    text: '테마 & 스킨',
+                    items: [
+                        { text: '테마', link: '/developers/make_theme' },
+                        { text: '스킨', link: '/developers/make_skin' },
+                    ]
+                },
+                {
+                    text: '플러그인',
+                    items: [
+                        { text: 'extend', link: '/developers/extend' },
                     ]
                 }
             ]
