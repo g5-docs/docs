@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as s}from"./app.deb52274.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developers/cache.md","lastUpdated":1674060445000}'),c={name:"developers/cache.md"},o=s("p",null,"TBD",-1),r=[o];function n(d,p,_,l,i,h){return a(),t("div",null,r)}const u=e(c,[["render",n]]);export{f as __pageData,u as default};
