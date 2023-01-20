@@ -1,9 +1,38 @@
-export default {
+import { defineConfig } from 'vitepress'
+import deepmerge from 'deepmerge'
+
+let mergeConfig = {
+    head: []
+};
+
+if (process.env.NODE_ENV === 'production') {
+    mergeConfig.head = [
+        [
+            'script',
+            { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-XG10TC9M9Y' }
+        ],
+        [
+            'script',
+            {},
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-XG10TC9M9Y');"
+        ]
+    ]
+} else {
+    mergeConfig = {
+        markdown: {
+            lineNumbers: true,
+        },
+    }
+}
+
+export default defineConfig(deepmerge(mergeConfig, {
     lang: 'ko_KR',
     titleTemplate: ':title - 그누보드5 가이드',
     base: '/docs/',
+    markdown: {
+        defaultHighlightLang: 'php'
+    },
     lastUpdated: true,
-    appearance: 'dark',
     themeConfig: {
         siteTitle: 'GNUBOARD 5',
         outline: [2, 4],
@@ -170,16 +199,5 @@ export default {
         footer: {
             message: '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="display: inline-block;border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.'
         },
-    },
-    head: [
-        [
-            'script',
-            { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-XG10TC9M9Y' }
-        ],
-        [
-            'script',
-            {},
-            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-XG10TC9M9Y');"
-        ]
-    ]
-}
+    }
+}));
