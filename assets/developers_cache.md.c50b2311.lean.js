@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as c,d as t}from"./app.797884a7.js";const u=JSON.parse('{"title":"캐시 (Cache)","description":"","frontmatter":{},"headers":[],"relativePath":"developers/cache.md","lastUpdated":1674203136000}'),_={name:"developers/cache.md"},i=t("",3),n=[i];function l(o,r,s,d,h,f){return c(),a("div",null,n)}const $=e(_,[["render",l]]);export{u as __pageData,$ as default};

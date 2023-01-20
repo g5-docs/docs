@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as s}from"./app.797884a7.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"make-theme/index.md","lastUpdated":1674203136000}'),n={name:"make-theme/index.md"},o=s("p",null,"TBD",-1),r=[o];function c(d,_,i,p,m,l){return a(),t("div",null,r)}const u=e(n,[["render",c]]);export{h as __pageData,u as default};
