@@ -18,7 +18,7 @@ TBD
 TBD
 
 
-- 설치 전 [초기 설정](gnuboard/config) 참고
+- 설치 전 [초기 설정](/gnuboard/config) 참고
 - 파일 업로드
 - 브라우저
 - data 폴더 만들기
