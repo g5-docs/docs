@@ -12,11 +12,22 @@ hero:
 features:
   - icon: 😀
     title: 그누보드 사용 가이드
+    details: (작성 중) 그누보드 일반 사용 가이드
     link: /gnuboard/index
   - icon: 🛍️
     title: 영카트 사용 가이드
+    details: (작성 중) 영카트 일반 사용 가이드
     link: /youngcart/index
+  - icon: 😀
+    title: 테마 만들기
+    details: (작성 중) 테마 제작 가이드
+    link: /make-theme/index
+  - icon: 😀
+    title: 스킨 만들기
+    details: (작성 중) 스킨 제작 가이드
+    link: /make-skin/index
   - icon: 💻
     title: 개발자 가이드
+    details: (작성 중) 개발자용 가이드
     link: /developers/index
 ---
