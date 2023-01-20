@@ -49,9 +49,10 @@ add_replace($tag, $callback, $priority = G5_HOOK_DEFAULT_PRIORITY, $args = 0);
 ```
 
 ::: tip
-네 번째 인자의 갯수 설정의 유의하자.
+네 번째 인자의 갯수 설정에 유의하자.
 
-어떤 Hook은 인자에 아무것도 전달해주지 않지만 변경할 수 있는 데이터나 참고할 수 있는 데이터를 인자로 전달해주므로 사용하려는 Hook에서 전달하는 인자의 갯수를 확인하여 네번째 인자에 갯수를 지정해야 활용할 수 있다.
+어떤 Hook은 인자로 아무것도 전달해주지 않을 수 있지만 동작에 필요한 데이터를 전달해주기도 한다.
+사용하려는 Hook에서 전달하는 인자의 갯수를 확인하여 네번째 인자에 갯수를 지정해야 활용할 수 있다.
 :::
 
 ### 함수를 리스너로 등록
@@ -78,14 +79,14 @@ function listenerCommonHeader()
 # 리스너 등록
 add_replace(
     'board_content_head',
-    array('MyHookListenerClass', 'listenerBoardContentHead'),
+    ['MyHookListenerClass', 'listenerBoardContentHead'],
     G5_HOOK_DEFAULT_PRIORITY,
     1
 );
 
 class MyHookListenerClass
 {
-    private self $instance;
+    private static self $instance;
 
     public static function getInstance(): self
     {
@@ -109,10 +110,10 @@ class MyHookListenerClass
 클로저는 리스너로 등록할 수 없다.
 :::
 
-::: danger
-Hook이 실행될 때 마다 리스너로 등록한 메소가 포함된 클래스의 `getInstance()`를 호출한다.
+::: warning
+Hook이 실행될 때 마다 리스너로 등록한 메소드가 포함된 클래스의 `getInstance()`를 호출한다.
 
-`getInstance()` 메소드가 없다면 매번 새로운 인스턴스를 만드려고 시도하기 때문에 2개 혹은 그 이상의 인스턴스가 생성될 수 있어서 다중 인스턴스로 인한 사이드 이펙트에 주의해야한다. Hook 리스너를 모아둔 개별 클래스를 따로 두는 것도 좋다.
+`getInstance()` 메소드가 없다면 Hook이 실행되면서 매번 새로운 인스턴스를 만든다. 2개 이상의 인스턴스가 생성될 수 있으며 다중 인스턴스로 인한 사이드 이펙트에 주의해야한다. Hook 리스너를 모아둔 개별 클래스를 따로 두는 것도 좋다.
 :::
 
 ## 새로운 Hook 추가
