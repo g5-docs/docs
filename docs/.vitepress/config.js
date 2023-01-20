@@ -129,13 +129,6 @@ export default {
                     ]
                 },
                 {
-                    text: '테마 & 스킨',
-                    items: [
-                        { text: '테마', link: '/developers/make_theme' },
-                        { text: '스킨', link: '/developers/make_skin' },
-                    ]
-                },
-                {
                     text: '기능 확장하기',
                     items: [
                         { text: 'Hook', link: '/developers/hook' },
