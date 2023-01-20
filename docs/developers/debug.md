@@ -3,6 +3,7 @@
 그누보드에는 실행된 SQL 질의문 목록과 실행된 [Hook](./hook) 목록을 볼 수 있는 간단한 도구를 제공한다.
 
 ## DebugBar
+
 평소에는 동작하지 않으며 디버그 모드를 켜면 사이트 하단에 DebugBar가 표시된다.
 
 `/config.php` 파일에서 `G5_DEBUG` 상수를 찾아 `true`로 바꾸면 된다.
@@ -24,8 +25,6 @@ define('G5_DEBUG', false);
 
 ## 로그 기록
 
-::: danger
-로그를 기록하기 위해 `write_log()` 함수를 제공하지만 사용을 권장하지 않는다.
+TBD
 
-자세한 내용은 [보안](./security) 섹션을 참고.
-:::
+write_log()
