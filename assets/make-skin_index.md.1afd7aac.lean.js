@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as s}from"./app.53976a5e.js";const k=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"make-skin/index.md","lastUpdated":1674203136000}'),n={name:"make-skin/index.md"},o=s("p",null,"TBD",-1),r=[o];function c(d,i,_,p,l,m){return a(),t("div",null,r)}const u=e(n,[["render",c]]);export{k as __pageData,u as default};
