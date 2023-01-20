@@ -160,8 +160,8 @@ export default defineConfig(deepmerge(mergeConfig, {
                 {
                     text: '기능 확장하기',
                     items: [
-                        { text: 'Hook', link: '/developers/hook' },
                         { text: '플러그인', link: '/developers/extend' },
+                        { text: 'Hook', link: '/developers/hook' },
                     ]
                 },
                 {
