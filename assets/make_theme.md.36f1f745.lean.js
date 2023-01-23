@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,d as o}from"./app.9e6c74cb.js";const u=JSON.parse('{"title":"테마의 기본 구조","description":"","frontmatter":{},"headers":[],"relativePath":"make/theme.md","lastUpdated":1674506543000}'),c={name:"make/theme.md"},s=o("",3),d=[s];function _(r,n,i,p,l,h){return a(),t("div",null,d)}const f=e(c,[["render",_]]);export{u as __pageData,f as default};
