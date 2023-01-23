@@ -39,15 +39,21 @@ export default defineConfig(deepmerge(mergeConfig, {
         sidebar: {
             '/gnuboard/': [
                 {
-                    text: '설치',
+                    text: '시작하기',
                     items: [
                         { text: '설치', link: '/gnuboard/install' },
                         { text: '초기 설정', link: '/gnuboard/config' },
                         { text: '테마 & 스킨', link: '/gnuboard/theme_skin' },
+                        { text: '회원' },
+                        { text: '포인트' },
+                        { text: '짧은 주소' },
+                        { text: '' },
+                        { text: '' },
+                        { text: '' },
                     ]
                 },
                 {
-                    text: '환경설정',
+                    text: '환경 설정',
                     collapsible: true,
                     // collapsed: true,
                     items: [
@@ -57,11 +63,10 @@ export default defineConfig(deepmerge(mergeConfig, {
                         { text: '메뉴' },
                         { text: '메일 테스트' },
                         { text: '팝업 레이어 관리' },
-                        { text: 'phpinfo()' },
                     ]
                 },
                 {
-                    text: '회원관리',
+                    text: '회원',
                     collapsible: true,
                     // collapsed: true,
                     items: [
@@ -75,7 +80,7 @@ export default defineConfig(deepmerge(mergeConfig, {
                     ]
                 },
                 {
-                    text: '게시판 관리',
+                    text: '게시판',
                     collapsible: true,
                     // collapsed: true,
                     items: [
@@ -94,6 +99,7 @@ export default defineConfig(deepmerge(mergeConfig, {
                     collapsible: true,
                     // collapsed: true,
                     items: [
+                        { text: 'phpinfo()' },
                         { text: '(통합1)세션파일 일괄삭제' },
                         { text: '(통합1)캐시파일 일괄삭제' },
                         { text: '(통합1)캡챠파일 일괄삭제' },
@@ -141,6 +147,43 @@ export default defineConfig(deepmerge(mergeConfig, {
                     ],
                 }
             ],
+            '/make/': [
+                {
+                    text: '테마 만들기',
+                    items: [
+                        { text: '테마의 기본 구조', link: '/make/theme' },
+                        { text: '레이아웃' },
+                    ],
+                },
+                {
+                    text: '스킨 만들기',
+                    collapsible: true,
+                    // collapsed: true,
+                    items: [
+                        { text: 'board' },
+                        { text: 'connect' },
+                        { text: 'content' },
+                        { text: 'faq' },
+                        { text: 'latest' },
+                        { text: 'member' },
+                        { text: 'new' },
+                        { text: 'outlogin' },
+                        { text: 'poll' },
+                        { text: 'popular' },
+                        { text: 'qa' },
+                        { text: 'search' },
+                        { text: 'shop' },
+                        { text: 'social' },
+                        { text: 'visit' },
+                    ],
+                },
+                {
+                    text: '플러그인 만들기',
+                    items: [
+                        { text: '플러그인', link: '/developers/extend' },
+                    ],
+                },
+            ],
             '/developers/': [
                 {
                     text: '일반',
@@ -149,19 +192,36 @@ export default defineConfig(deepmerge(mergeConfig, {
                         { text: '설정', link: '/developers/config' },
                         { text: 'Database', link: '/developers/database' },
                         { text: '경로 및 URL', link: '/developers/path_and_url' },
-                        { text: '문자열', link: '/developers/string' },
                         { text: '쿠키 및 세션', link: '/developers/cookie_and_session' },
                         { text: 'JS & CSS', link: '/developers/assets' },
                         { text: '캐시', link: '/developers/cache' },
-                        { text: '테스트', link: '/developers/test' },
                         { text: '디버깅', link: '/developers/debug' },
+                        { text: '테스트', link: '/developers/test' },
+                        { text: '헬퍼', link: '/developers/helpers' },
                     ]
                 },
                 {
-                    text: '기능 확장하기',
+                    text: '헬퍼',
+                    items: [
+                        { text: '문자열' },
+                        { text: '경로 및 URL' },
+                        { text: '쿠기 및 세션' },
+                        { text: '데이터' },
+                        { text: '토큰 및 암호화' },
+                        { text: '' },
+                        { text: '' },
+                        { text: '' },
+                        { text: '' },
+                        { text: '' },
+                    ]
+                },
+                {
+                    text: '확장하기',
                     items: [
                         { text: '플러그인', link: '/developers/extend' },
                         { text: 'Hook', link: '/developers/hook' },
+                        { text: '테마', link: '/make/theme' },
+                        { text: '스킨', link: '/make/skin' },
                     ]
                 },
                 {
@@ -179,8 +239,8 @@ export default defineConfig(deepmerge(mergeConfig, {
             {
                 text: '만들기',
                 items: [
-                    { text: '테마', link: '/make-skin/index' },
-                    { text: '스킨', link: '/make-skin/index' },
+                    { text: '테마', link: '/make/theme' },
+                    { text: '스킨', link: '/make/skin' },
                     { text: '개발자 가이드', link: '/developers/index' },
                 ]
             },

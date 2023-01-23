@@ -77,7 +77,7 @@ function myPluginListenerTailSub()
 
 ::: details 폴더를 펼쳐보면
 
-```plain
+```txt
 ├── extend
 │   └── my_plugin.extend.php // [!code hl]
 └── plugin
