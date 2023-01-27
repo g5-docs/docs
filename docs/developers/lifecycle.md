@@ -29,7 +29,7 @@ DB 연결과 설정, 주요 변수의 초기화가 이 파일에서 이뤄지며
 
 그누보드의 환경설정을 로드하고 주요 변수들을 초기화한 후 현재 요청에 대한 회원, 게시판에 대한 정보를 가져온다. [트롤을 풀어 놓기](/developers/polluted_variables)도 하지만 최소한의 보안을 위한 처리도 한다.
 
-[Hook](/developers/hook)을 비롯한 주요 내장 라이브러를 가져온다. 여기까지는 사용자나 개발자가 개입할 수 있는 기회가 없지만 이후에 확장성을 위한 `extend` 폴더의 파일을 불러온다([플러그인](/developers/extend) 참고). 마지막으로 `common_header` Event Hook을 실행한다.
+[Hook](/developers/hook)을 비롯한 주요 내장 라이브러를 가져온다. 여기까지는 사용자나 개발자가 개입할 수 있는 기회가 없지만 이후에 확장성을 위한 `extend` 폴더의 파일을 불러온다([플러그인](/developers/make_plugin) 참고). 마지막으로 `common_header` Event Hook을 실행한다.
 
 ## 레이아웃 적용
 

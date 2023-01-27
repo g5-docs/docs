@@ -30,7 +30,6 @@ export default defineConfig(deepmerge(mergeConfig, {
     titleTemplate: ':title - 그누보드5 가이드',
     base: '/docs/',
     markdown: {
-        defaultHighlightLang: 'php'
     },
     lastUpdated: true,
     themeConfig: {
