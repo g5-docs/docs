@@ -170,3 +170,7 @@ run_event('my_first_event_hook', $data, $options);
 $data = 'default_data';
 $data = run_event('my_first_replace_hook', $data);
 ```
+
+::: warning
+그누보드는 DB 트랜젝션을 이용하지 않으므로 Hook 리스너에서는 오류 등으로 의도하지 않게 동작이 멈추지 않도록 주의해야 한다.
+:::
