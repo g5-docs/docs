@@ -1,9 +1,14 @@
-import { defineConfig } from 'vitepress'
-import deepmerge from 'deepmerge'
+import { defineConfig } from 'vitepress';
+import deepmerge from 'deepmerge';
+import { SitemapStream } from 'sitemap';
+import { createWriteStream } from 'node:fs';
+import { resolve } from 'node:path';
 
 let mergeConfig = {
     head: []
 };
+
+const links = [];
 
 if (process.env.NODE_ENV === 'production') {
     mergeConfig.head = [
@@ -28,9 +33,8 @@ if (process.env.NODE_ENV === 'production') {
 export default defineConfig(deepmerge(mergeConfig, {
     lang: 'ko_KR',
     titleTemplate: ':title - 그누보드5 가이드',
+    description: '사용자가 직접 만드는 그누보드 안내서 ',
     base: '/docs/',
-    markdown: {
-    },
     lastUpdated: true,
     themeConfig: {
         siteTitle: 'GNUBOARD 5',
@@ -259,5 +263,23 @@ export default defineConfig(deepmerge(mergeConfig, {
         footer: {
             message: '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="display: inline-block;border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />이 저작물은 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스</a>에 따라 이용할 수 있습니다.'
         },
+    },
+    transformHtml: (_, id, { pageData }) => {
+        if (!/[\\/]404\.html$/.test(id))
+            links.push({
+                // you might need to change this if not using clean urls mode
+                url: pageData.relativePath.replace(/((^|\/))?\.md$/, '$2'),
+                lastmod: pageData.lastUpdated
+            })
+    },
+    buildEnd: async ({ outDir }) => {
+        const sitemap = new SitemapStream({
+            hostname: 'https://g5-docs.github.io/docs/'
+        })
+        const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
+        sitemap.pipe(writeStream)
+        links.forEach((link) => sitemap.write(link))
+        sitemap.end()
+        await new Promise((r) => writeStream.on('finish', r))
     }
 }));

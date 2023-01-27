@@ -10,6 +10,7 @@
   "devDependencies": {
     "@giscus/vue": "^2.2.6",
     "deepmerge": "^4.2.2",
+    "sitemap": "^7.1.1",
     "vitepress": "^1.0.0-alpha.38",
     "vue": "^3.2.45"
   },
