@@ -27,7 +27,7 @@ HEAD, OPTIONS 등 HTTP Method에 따라 응답을 다르게 반환하지 않으�
 
 DB 연결과 설정, 주요 변수의 초기화가 이 파일에서 이뤄지며, 필수로 include로 사용하는 파일이다. `common.php` 파일을 직접 include하거나 `_common.php`, `head.php`, `_head.php` 및 `*.head.php` 등의 파일을 통해 간접적으로 로드하기도 한다.
 
-그누보드의 환경설정을 로드하고 주요 변수들을 초기화한 후 현재 요청에 대한 회원, 게시판에 대한 정보를 가져온다. [트롤을 풀어 놓기](/developers/security#오염된-글로벌-변수)도 하지만 최소한의 보안을 위한 처리도 한다.
+그누보드의 환경설정을 로드하고 주요 변수들을 초기화한 후 현재 요청에 대한 회원, 게시판에 대한 정보를 가져온다. [트롤을 풀어 놓기](/developers/polluted_variables)도 하지만 최소한의 보안을 위한 처리도 한다.
 
 [Hook](/developers/hook)을 비롯한 주요 내장 라이브러를 가져온다. 여기까지는 사용자나 개발자가 개입할 수 있는 기회가 없지만 이후에 확장성을 위한 `extend` 폴더의 파일을 불러온다([플러그인](/developers/extend) 참고). 마지막으로 `common_header` Event Hook을 실행한다.
 

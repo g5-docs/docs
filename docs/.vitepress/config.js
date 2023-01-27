@@ -180,7 +180,7 @@ export default defineConfig(deepmerge(mergeConfig, {
                 {
                     text: '플러그인 만들기',
                     items: [
-                        { text: '플러그인', link: '/developers/extend' },
+                        { text: '플러그인', link: '/developers/make_plugin' },
                     ],
                 },
             ],
@@ -191,13 +191,30 @@ export default defineConfig(deepmerge(mergeConfig, {
                         { text: '라이프 사이클', link: '/developers/lifecycle' },
                         { text: '설정', link: '/developers/config' },
                         { text: 'Database', link: '/developers/database' },
-                        { text: '경로 및 URL', link: '/developers/path_and_url' },
+                        { text: '경로 및 URL Rewrite', link: '/developers/path_and_url' },
                         { text: '쿠키 및 세션', link: '/developers/cookie_and_session' },
                         { text: 'JS & CSS', link: '/developers/assets' },
                         { text: '캐시', link: '/developers/cache' },
                         { text: '디버깅', link: '/developers/debug' },
                         { text: '테스트', link: '/developers/test' },
                         { text: '헬퍼', link: '/developers/helpers' },
+                    ]
+                },
+                {
+                    text: '보안',
+                    items: [
+                        { text: '오염된 글로벌 변수', link: '/developers/polluted_variables' },
+                        { text: 'SQL Injection', link: '/developers/sql_injection' },
+                        { text: '토큰 및 암호화', link: '/developers/token_and_hash' },
+                    ]
+                },
+                {
+                    text: '확장하기',
+                    items: [
+                        { text: '플러그인', link: '/developers/make_plugin' },
+                        { text: 'Hook', link: '/developers/hook' },
+                        { text: '테마', link: '/make/theme' },
+                        { text: '스킨', link: '/make/skin' },
                     ]
                 },
                 {
@@ -213,22 +230,6 @@ export default defineConfig(deepmerge(mergeConfig, {
                         { text: '' },
                         { text: '' },
                         { text: '' },
-                    ]
-                },
-                {
-                    text: '확장하기',
-                    items: [
-                        { text: '플러그인', link: '/developers/extend' },
-                        { text: 'Hook', link: '/developers/hook' },
-                        { text: '테마', link: '/make/theme' },
-                        { text: '스킨', link: '/make/skin' },
-                    ]
-                },
-                {
-                    text: '보안',
-                    items: [
-                        { text: '문제점 인식', link: '/developers/security' },
-                        { text: '토큰 및 암호화', link: '/developers/token_and_hash' },
                     ]
                 },
             ]

@@ -33,5 +33,5 @@ features:
   - icon: 🧩
     title: 플러그인 만들기
     details: (작성 중) 플러그인 제작 가이드
-    link: /developers/extend
+    link: /developers/make_plugin
 ---

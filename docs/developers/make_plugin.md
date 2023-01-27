@@ -126,7 +126,7 @@ include_once '../plugin/my_plugin/bootstrap.php';
 
 
 ::: tip
-이름 중복문제를 피하고 [오염된 글로벌 변수](/developers/security.html#오염된-글로벌-변수) 문제에서 벗어나기위해 아래와 같이 include하는 파일이 글로벌 스코프의 영향을 받지 않도록 간단한 방법을 사용할 수 있다(PHP 7 버전 이상).
+이름 중복문제를 피하고 [오염된 글로벌 변수](/developers/polluted_variables) 문제에서 벗어나기위해 아래와 같이 include하는 파일이 글로벌 스코프의 영향을 받지 않도록 간단한 방법을 사용할 수 있다(PHP 7 버전 이상).
 
 ```php
 (function () {
